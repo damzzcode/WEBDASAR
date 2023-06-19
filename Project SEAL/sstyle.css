@@ -41,21 +41,7 @@
     color: black;
 }
 
-#display-section {
-    background: url(Assets/display.png);
-    background-size: cover;
-    height: 300px;
-    position: relative;
-    padding: 0%;
-}
 
-#displa-section {
-    background: url(Assets/display2.png);
-    background-size: cover;
-    height: 300px;
-    position: relative;
-    padding: 0%;
-}
 
 #content { 
     display: flex;
