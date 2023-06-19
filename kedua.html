@@ -1,12 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Punyamu</title>
-</head>
-<body>
-    <p>Where is damzz?</p>
-</body>
-</html>
+<?php
+// index.php
+
+session_start();
+
+// Periksa apakah pengguna telah login, jika tidak, arahkan ke halaman login
+if (!isset($_SESSION['username'])) {
+    header("Location: login.php");
+    exit();
+}
+
+// Tampilkan halaman utama admin
+echo "Selamat datang, " . $_SESSION['username'] . "! Ini adalah halaman admin.";
+?>
